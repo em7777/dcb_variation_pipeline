@@ -58,7 +58,7 @@ for i=days(1):days(end)
 
         % Start time is built from day of year information 
         epochStart = navsu.time.jd2epochs(navsu.time.doy2jd(year,doy)+0.5);  
-        epochs = (epochStart:dt:(epochStart+n_epochs*60-60))'; % just running for one hour
+        epochs = (epochStart:dt:(epochStart+n_epochs*60-60))'; 
 
         % Choosing an arbitrary GPS or GLONASS satellite 
         prn = prns(j);
